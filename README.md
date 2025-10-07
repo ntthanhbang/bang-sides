@@ -1,2 +1,2 @@
-# b-ng-s-sides
+# bang-sides
 my personal portfolio website
