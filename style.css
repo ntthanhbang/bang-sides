@@ -88,10 +88,12 @@ input {
     width: 390px;
     height: 30px;
 }
+
 .buttons {
     color: #D84040;
     font-size: 25px;
     width: 100px;
+    height: 30px;
 }
 
 section {
