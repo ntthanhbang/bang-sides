@@ -93,7 +93,8 @@ input {
     color: #D84040;
     font-size: 25px;
     width: 100px;
-    height: 30px;
+    height: 40px;
+    text-align: center;
 }
 
 section {
