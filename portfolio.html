@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>băng's sides</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+        <div id="header"></div>
+        <main>
+            <section id="TrafficLight">
+                <img src="assets/dldProject.png" alt="A screenshot captures the design of my Traffic Light System.">
+                <div>
+                    <h2>Traffic Light System Project</h2>
+                <p>In this final project for my Digital Logic Design class,
+                    I designed and implemented a traffic light controller using logic gates, a JK flip-flop, a clock, and two ICs 74HC190.
+                    <br>
+                    It can demonstrate light transitions and allowed resetting and time adjustments for both directions.</p>
+                    <br>
+                    Discover the full design process <a href="assets/Traffic Light Stimulation_Bang Nguyen.pdf" target="_blank">here</a>!
+                </div>
+            </section>
+        </main>
+
+        <footer>Copyright © 2025 Bang Nguyen. All rights reserved.</footer>
+
+        <script>
+            fetch("header.html")
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById("header").innerHTML = data;
+            });
+        </script>
+    </body>
+</html>

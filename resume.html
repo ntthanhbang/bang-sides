@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>băng's sides</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+        <div id="header"></div>
+        <main>
+            <section>
+                <h2>Frontend Developer Newbie</h2>
+                <p>33 Street 7, Ho Chi Minh City</p>
+                <p>(84) 969-070-805</p>
+                <p>bangnguyentruongthanh@gmail.com</p>
+            </section>
+
+            <section>
+                <h2>Education</h2>
+                <p>Internation University - VNU HCM, Bachelor’s degree in Information Technology</p>
+                <p class="date">Septemter 2023 to June 2027</p>
+            </section>
+
+            <section>
+                <h2>Skills</h2>
+                <p>Java, Python, C++, Git, HTML, CSS, TypeScript</p>
+            </section>
+
+            <section>
+                <h2>Experience</h2>
+                <h3>Project Manager - Team UniCode</h3>
+                <p class="date">October 2023</p>
+                <ul>
+                    <li>Led a team of 5 members in developing EcoWaste, an application connecting waste sellers,
+                    collectors, and recycling hubs to improve waste management and encourage recycling.</li>
+                    <li>Planned the project roadmap, assigned tasks, and ensured timely progress.</li>
+                    <li>Conducted market research to optimize the solution and pitched the final product to judges.</li>
+                </ul>
+
+                <h3>Project Manager - UniLib</h3>
+                <p class="date">October 2024 to December 2025</p>
+                <ul>
+                    <li>Researched existing university library management systems, identifying major drawbacks
+                    and proposing 5 new features to enhance the student experience in the book borrowing process.</li>
+                    <li>Developed and presented a clear project vision
+                        by creating comprehensive UML diagrams (use case, class, activity) to guide the team in developing a scalable, user-centric system.</li>
+                </ul>
+
+                <h3>Teaching Assistant</h3>
+                <p class="date">March 2025 to June 2025</p>
+                <ul>
+                    <li>Assist over 80 students in studying Data Structures & Algorithm class.</li>
+                </ul>
+            </section>
+        </main>
+
+        <footer>Copyright © 2025 Bang Nguyen. All rights reserved.</footer>
+
+        <script>
+            fetch("header.html")
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById("header").innerHTML = data;
+            });
+        </script>
+    </body>
+</html>

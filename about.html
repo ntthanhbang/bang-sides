@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>băng's sides</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+        <div id="header"></div>
+        <main>
+            <img id="aboutpfp" src="assets/kid.jpg" alt="Băng when she was a kid">
+            <div id="description">
+                <h2><bold>Nice to meet you :)</bold></h2>
+                <p>My name is Băng, which means iceberg (isn't that cool?).
+                    <br><br>
+                    I’ve always been that curious kid who couldn’t stop asking “how?”.
+                    Whether it’s tech, science, or something completely random, I love diving into new ideas just to see where they lead (you can obviously tell that I love Christmas).
+                    Creativity has always been my favorite tool - especially when it comes to solving tricky problems.
+                    <br><br>
+                    But as much as I love innovation, I’m equally fascinated by people.
+                    Psychology, humanity, what makes us <em>us</em> - that stuff pulls me in every time.
+                    Now, I’m on a journey to mix my love for technology and creativity to make the world a little smarter, kinder, and maybe even more fun ;)
+                </p>
+            </div>
+        </main>
+        <footer>Copyright © 2025 Bang Nguyen. All rights reserved.</footer>
+
+        <script>
+            fetch("header.html")
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById("header").innerHTML = data;
+            });
+        </script>
+    </body>
+</html>

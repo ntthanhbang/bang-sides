@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>băng's sides</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+        <div id="header"></div>
+        <main>
+            <img id="homepfp" src="assets/pfp1.jpg" alt="Băng's Profile picture">
+            
+            <div id="introduction">
+                <h2><bold>Hi there!</bold></h2>
+                <p>I’m Băng, a life-long learner who loves <br>
+                    <span>technology</span>, <span>human</span>, and <span>creativity</span>
+                </p>
+                <p style="font-size: 30px;">Check out my resume <a href="resume.html">here</a> :)</p>
+            </div>
+        </main>
+
+        <footer>Copyright © 2025 Bang Nguyen. All rights reserved.</footer>
+
+        <script>
+            fetch("header.html")
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById("header").innerHTML = data;
+            });
+        </script>
+    </body>
+</html>

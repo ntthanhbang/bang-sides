@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>băng's sides</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+        <div id="header"></div>
+        <main>
+            <h2 style="margin-left: 550px; font-size: 30px;">Yay, thanks for reaching out! :)</h2>
+            <form>
+                <lable>
+                    What's your name? <br>
+                    <input type="text" name="name"> <br>
+                </lable> <br>
+                <lable>
+                    What's your email address? <br>
+                    <input type="text" name="email"> <br>
+                </lable> <br>
+                <lable>
+                    What's your message? <br>
+                    <textarea name="message" rows="10" cols="50"></textarea> <br>
+                </lable>
+                
+                <p>Wanna get to know each other?</p>
+                <input class="buttons" type="submit" value="Yes!">
+                <input class="buttons" type="reset" value="No :(">
+            </form>
+        </main>
+
+        <footer>Copyright © 2025 Bang Nguyen. All rights reserved.</footer>
+
+        <script>
+            fetch("header.html")
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById("header").innerHTML = data;
+            });
+        </script>
+    </body>
+</html>
